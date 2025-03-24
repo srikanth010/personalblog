@@ -18,14 +18,16 @@ public class ContactController {
             @RequestParam("email") String email,
             @RequestParam("subject") String subject,
             @RequestParam("message") String message,
-            @RequestParam("myfile") MultipartFile file) {
+            @RequestParam(value= "myfile", required = false) MultipartFile file)
+{
+    
 
         ContactForm contactForm = new ContactForm();
         contactForm.setName(name);
         contactForm.setEmail(email);
         contactForm.setSubject(subject);
         contactForm.setMessage(message);
-
+    
         // Process the file here (e.g., save it, send as an attachment, etc.)
 
         emailService.sendContactEmail(contactForm, file);

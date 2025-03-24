@@ -13,6 +13,17 @@ form {
     color: black; /* This will set the text color within the form */
 }
 
+.form-response {
+    margin-top: 10px;
+    font-weight: bold;
+    color: green;
+  }
+  
+  .form-response:empty {
+    display: none;
+  }
+  
+
 button[type="submit"] {
     background-color: #007bff;
     color: #fff;
@@ -41,3 +52,5 @@ input, textarea {
     font-size: 16px;
     color: #000;
     }
+
+    
