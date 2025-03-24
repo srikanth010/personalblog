@@ -1,0 +1,66 @@
+/* About Section */
+.about-container {
+    max-width: 800px;
+    margin: 40px auto; /* Reduce margin for better balance */
+    text-align: center;
+    padding: 20px;
+}
+
+.about-heading {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2c3e50; /* Dark navy for better contrast */
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+/* Divider Line */
+/* Keep the Orange Divider for Branding */
+.about-divider {
+  width: 80px;
+  height: 4px;
+  background-color: #FF6B35;
+  margin: 10px auto 20px;
+  border-radius: 2px;
+}
+
+/* Subheading */
+.about-subheading {
+    font-size: 20px;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* About Text */
+.about-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+}
+
+/* Highlighted Words */
+.about-text strong {
+    color: #2c3e50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        margin: 30px auto;
+        padding: 10px;
+    }
+
+    .about-heading {
+        font-size: 28px;
+    }
+
+    .about-subheading {
+        font-size: 18px;
+    }
+
+    .about-text {
+        font-size: 16px;
+    }
+}

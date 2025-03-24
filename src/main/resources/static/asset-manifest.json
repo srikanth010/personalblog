@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e9bd0267.css",
+    "main.js": "/static/js/main.f5d8b5b4.js",
+    "static/js/453.8ab44547.chunk.js": "/static/js/453.8ab44547.chunk.js",
+    "static/media/wyndham.jpeg": "/static/media/wyndham.5b375b8ef19bfdda86ff.jpeg",
+    "static/media/ewb.png": "/static/media/ewb.dfeb88ec442b3c8b7468.png",
+    "index.html": "/index.html",
+    "main.e9bd0267.css.map": "/static/css/main.e9bd0267.css.map",
+    "main.f5d8b5b4.js.map": "/static/js/main.f5d8b5b4.js.map",
+    "453.8ab44547.chunk.js.map": "/static/js/453.8ab44547.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e9bd0267.css",
+    "static/js/main.f5d8b5b4.js"
+  ]
+}

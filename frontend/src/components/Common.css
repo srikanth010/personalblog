@@ -1,0 +1,44 @@
+.scroll-down {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 32px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    opacity: 0;
+    animation: fade-in 1s forwards, bounce 1s infinite;
+}
+
+.scroll-down:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    margin: 8px auto 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #fff;
+    transform: rotate(0deg);
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
+}
+
+h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1.8em;
+    font-style: normal;
+    margin-bottom: 30px;
+    font-weight: 400;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}

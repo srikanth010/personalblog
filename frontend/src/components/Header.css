@@ -1,0 +1,101 @@
+/* Header.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+/* Add this CSS for the sticky header */
+header {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  background-color: #fff;
+  color: white;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Add this line to make the header fixed */
+  top: 0; /* Stick it to the top of the viewport */
+  width: 100%; /* Make it span the entire width */
+  z-index: 100; /* Ensure it's above other elements */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px; /* Spacing between letters */
+}
+
+
+/* SK Logo in Orange */
+.header-logo {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #ff7948, #FF6B35);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 3px;
+  transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.header-logo:hover {
+  transform: scale(1.15);
+  text-shadow: 3px 3px 12px #FF6B35;
+}
+
+
+header h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+nav {
+  flex-grow: 1;
+  text-align: right;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  gap: 15px;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: #2c3e50; /* Dark navy for contrast */
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 8px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+/* Hover Effect for Navigation */
+nav ul li a:hover {
+  background-color: #FF6B35;
+  color: white;
+  transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

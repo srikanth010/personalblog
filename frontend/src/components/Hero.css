@@ -1,0 +1,77 @@
+/* Hero.css */
+.hero {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 60px;
+  }
+
+  /* Semi-transparent Overlay */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #ffff(0, 0, 0, 0.7); /* Black with 70% opacity (adjust as needed) */
+    z-index: -1; /* Ensure the overlay is behind the content */
+  }
+
+  nav ul li a {
+    color: #2c3e50; /* Dark navy for contrast */
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+  }
+  
+  
+
+  /* Hover Effects */
+nav ul li a:hover {
+  background-color: #FF6B35;
+  color: white;
+  transform: scale(1.1);
+}
+  
+  /* Text styles */
+.hero-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #2c3e50;
+  }
+  
+  .hero-subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: #555;
+  }
+
+  .hero-img {
+    width: 200px;
+    height: 200px;
+    object-fit: fit;
+    border-radius: 50%; /* Makes it a circle */
+  }
+
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2em; /* Adjust for smaller screens */
+    }
+  
+    .hero-subtitle {
+      font-size: 1em; /* Adjust for smaller screens */
+    }
+  }
+  
